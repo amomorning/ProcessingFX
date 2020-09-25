@@ -40,16 +40,18 @@ public class Main extends Application {
 
 
         primaryStage.addEventHandler(KeyEvent.KEY_PRESSED, event ->{
+            ObservableList<Double> pts = poly.getPoints();
+            Double d = pts.get(1);
             switch (event.getCode()) {
                 case W:
                     poly.translateXProperty().set(poly.getTranslateX() + 100);
-                    ObservableList<Double> pts = poly.getPoints();
-
-                    pts.set(0, 20.0);
+                    pts.set(1, d += 20.0);
 
                     break;
                 case S:
                     poly.translateXProperty().set(poly.getTranslateX() - 100);
+                    pts.set(1, d -= 20.0);
+
                     break;
             }
         });
