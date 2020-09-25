@@ -19,7 +19,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Sphere sphere = new Sphere(50);
 
         Group group = new Group();
 //        group.getChildren().add(sphere);
