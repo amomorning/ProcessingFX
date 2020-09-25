@@ -2,6 +2,6 @@
 
 ### Usage
 ```
-git clone https://github.com/amomorning/ProcessingFX.git
+git clone https://github.com/amomorning/processing-javafx.git
 ```
 then `open project in IDEA`
